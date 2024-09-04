@@ -1,0 +1,31 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'trabajo/css/registros.css' %}">
+</head>
+
+<h1>Lista de Vehículos</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Vehículo</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for vehiculo in vehiculos %}
+        <tr>
+            <td>{{ vehiculo }}</td>
+            <td>
+                <a href="{% url 'editar_vehiculo' vehiculo.id %}">Editar</a>
+                <form action="{% url 'eliminar_vehiculo' vehiculo.id %}" method="post" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit" onclick="return confirm('¿Estás seguro de que quieres eliminar este vehículo?');">Eliminar</button>
+                </form>
+                
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="{% url 'registrar_vehiculo' propietario.id %}">Registrar Nuevo Vehículo</a>
+<a  type="submit"  href="{% url 'listar_propietarios'  %}">  Guardar Cambios </a>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Propietario</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'trabajo/css/editar.css' %}">
+    <script src="{% static 'trabajo/js/propietario.js' %}" defer></script>
+</head>
+<body>
+    <h1>Registrar Propietario</h1>
+    <form id="propietarioForm" method="post">
+        {% csrf_token %}
+        <p>
+            <label for="id_nombre">Nombre:</label>
+            <input type="text" name="nombre" maxlength="100" required id="id_nombre">
+        </p>
+        <p>
+            <label for="id_numero_apartamento">Número apartamento:</label>
+            <input type="text" name="numero_apartamento" maxlength="10" required id="id_numero_apartamento">
+        </p>
+        <p>
+            <label for="id_telefono">Teléfono:</label>
+            <input type="text" name="telefono" maxlength="15" required id="id_telefono">
+        </p>
+        <p>
+            <label for="id_email">Email:</label>
+            <input type="email" name="email" maxlength="254" required id="id_email">
+        </p>
+        <button type="submit">Guardar Cambios</button>
+    </form>
+    <a href="{% url 'listar_propietarios' %}">Ver Propietarios</a>
+</body>
+</html>

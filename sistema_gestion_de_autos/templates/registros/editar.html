@@ -1,0 +1,11 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'trabajo/css/editar.css' %}">
+</head>
+<h1>Editar Registro</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar Cambios</button>
+</form>
+<a href="{% url 'listar_registros' %}">Volver a la Lista de Registros</a>

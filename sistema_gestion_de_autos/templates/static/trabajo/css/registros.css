@@ -1,0 +1,157 @@
+/* estilos.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #5cb85c; /* Verde */
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el ratón */
+}
+
+a {
+    color: #5cb85c; /* Verde */
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #5cb85c;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #4cae4c; /* Verde más oscuro */
+    color: white;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5cb85c; /* Verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.register-link:hover {
+    background-color: #4cae4c; /* Verde más oscuro */
+}
+
+/* estilos.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Borde de la tabla */
+}
+
+thead {
+    background-color: #5cb85c; /* Verde */
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el ratón */
+}
+
+a {
+    color: #5cb85c; /* Verde */
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #5cb85c;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #4cae4c; /* Verde más oscuro */
+    color: white;
+}
+
+/* estilos_listar.css */
+
+table {
+    border: 2px solid #5cb85c; /* Borde más grueso para listar */
+}
+
+th {
+    background-color: #5cb85c; /* Verde para encabezados */
+}
+
+td {
+    background-color: #ffffff; /* Fondo blanco para celdas */
+}
+
+/* estilos_editar.css */
+
+table {
+    border: 2px solid #d9534f; /* Borde rojo para editar */
+}
+
+th {
+    background-color: #d9534f; /* Rojo para encabezados */
+}
+
+td {
+    background-color: #ffffff; /* Fondo blanco para celdas */
+}
+
+button{
+    color: #5cb85c; /* Verde */
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #5cb85c;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}

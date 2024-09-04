@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Propietario</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'trabajo/css/editar.css' %}">
+    <script src="{% static 'trabajo/js/vehiculo.js' %}" defer></script>
+</head>
+<body>
+    <h1>registrar vehiculo {{propietario.nombre}}</h1>
+    <form id="VehiculoForm" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Registrar Vehículo</button>
+</form>
+<a href="{% url 'listar_vehiculos' propietario.id %}">Ver Vehículos</a>

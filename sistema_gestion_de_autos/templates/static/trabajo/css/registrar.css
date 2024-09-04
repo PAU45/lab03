@@ -1,0 +1,108 @@
+/* estilos.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center; /* Centra el título */
+    color: #333;
+    margin-bottom: 30px; /* Espaciado abajo del título */
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Estilos para el contenedor del formulario */
+form#VehiculoForm {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados más pronunciados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form#VehiculoForm:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+form#VehiculoForm p {
+    margin-bottom: 20px; /* Espaciado entre campos */
+}
+
+form#VehiculoForm label {
+    display: block;
+    margin-bottom: 8px; /* Espaciado debajo de la etiqueta */
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+form#VehiculoForm select,
+form#VehiculoForm input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Bordes redondeados */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form#VehiculoForm select:focus,
+form#VehiculoForm input[type="text"]:focus {
+    border-color: #5cb85c; /* Verde */
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.3); /* Sombra en el campo enfocado */
+    outline: none;
+}
+
+form#VehiculoForm button {
+    padding: 12px 20px;
+    background-color: #5cb85c; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form#VehiculoForm button:hover {
+    background-color: #4cae4c; /* Verde más oscuro */
+    transform: translateY(-2px);
+}
+
+form#VehiculoForm button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Estilos para el enlace de ver registros */
+a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #5cb85c; /* Verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px; /* Bordes redondeados */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    background-color: #4cae4c; /* Verde más oscuro */
+    transform: translateY(-2px);
+}
